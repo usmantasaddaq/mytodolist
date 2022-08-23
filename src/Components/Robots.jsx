@@ -19,4 +19,16 @@ export const robots=[
     name: 'Furqan',
     email: 'furqan@gmail.com'
    },
+   { id:6,
+      name: 'Hamza',
+      email: 'furqan@gmail.com'
+     },
+     { id:7,
+      name: 'Faizan',
+      email: 'furqan@gmail.com'
+     },
+     { id:8,
+      name: 'Ammar',
+      email: 'furqan@gmail.com'
+     },
 ]

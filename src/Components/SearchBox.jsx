@@ -8,9 +8,10 @@ const SearchBox = ({searchfield,searchChange}) => {
         type="Search"
         placeholder="search robots"
         onChange={searchChange}
+
       />
 
     </div>
   );
 };
-export default SearchBox;
+export default SearchBox; 

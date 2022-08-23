@@ -1,7 +1,7 @@
 import React from "react"; 
 import Cards from "./Cards";
  const Cardlist = ({robots})=>{
-    const cardComponent = robots.map((user,i) =>{
+    const cardComponent = robots?.map((user,i) =>{
        return( <Cards 
        key={i}
         id={robots[i].id}
