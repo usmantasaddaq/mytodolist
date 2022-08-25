@@ -1,8 +1,9 @@
-// import { render } from "@testing-library/react";
+import { render } from "@testing-library/react";
 import React, { Component } from "react";
 import Cardlist from "../Components/Cardlist";
 import Scroll from "../Components/Scroll";
 import SearchBox from "../Components/SearchBox";
+import ErrorBoundry from '../Components/ErrorBoundry';
 import "./App.css";
 const state = {
   robots: [],
@@ -18,6 +19,7 @@ class App extends Component {
     };
   }
   componentDidMount() {
+    console.log(this.props.store)
     fetch("https://jsonplaceholder.typicode.com/users")
       .then((response) => response.json())
       .then((users) => this.setState({ robots: users }));
@@ -36,7 +38,9 @@ class App extends Component {
         <h1 className="f1">RoboFriends</h1>
         <SearchBox searchChange={this.onSearchChange} />
         <Scroll>
+          <ErrorBoundry>
           <Cardlist robots={filteredRobots} />
+          </ErrorBoundry>
         </Scroll>
       </div>
     ):(

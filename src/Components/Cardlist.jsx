@@ -1,6 +1,10 @@
 import React from "react"; 
 import Cards from "./Cards";
  const Cardlist = ({robots})=>{
+   //   if(true){
+   //    throw new Error("NOOOO!")
+   //   }
+   
     const cardComponent = robots?.map((user,i) =>{
        return( <Cards 
        key={i}
