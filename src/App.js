@@ -1,30 +1,25 @@
 
 import './App.css';
+import React, {Component} from 'react'
+
 import Header from './myComponent/Header';
 import  {Footer}  from './myComponent/Footer';
 import { Todos } from './myComponent/Todos';
 import { TodoItems } from './myComponent/TodoItems';
-
-function App() {
- let todos =[{
-  sno:1,title:"Go to the market",
-  desc:"You need to go the market to get this job done"
- },{
-  sno:2,title:"Go to the mall",
-  desc:"You need to go the market to get this job done"
- },{
-  sno:3,title:"Go to the ghat",
-  desc:"You need to go the market to get this job done"
- }]
-
+class App extends Component {
+ render(){
   return (
-    <>
-     <Header title="My Todos List" searchBar ={true}/>
-  <Footer/>
-  <Todos/>
-  <TodoItems/>
-    </>
+    <div className='f1 tc'>
+    <h1>Hello World</h1>
+    <p>Welcome to React</p>
+    </div>
+  //   <> <Header title="My Todos List" searchBar ={true}/>
+  // <Footer/>
+  // <Todos/>
+  // <TodoItems/>
+  //   </>
   );
+}
 }
 
 export default App;

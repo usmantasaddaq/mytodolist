@@ -1,7 +1,5 @@
-import React from 'react'
+import React from "react";
 
 export const TodoItems = () => {
-  return (
-    <div>Todo work!</div>
-  )
-}
+  return <div>Todo work!</div>;
+};
